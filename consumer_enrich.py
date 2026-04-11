@@ -17,4 +17,4 @@ for message in consumer:
         message.value["risk_level"] = "LOW"
     
     
-    print(f"ENRICHED: {message.value}")
+    print(f"Enriched: {message.value}")

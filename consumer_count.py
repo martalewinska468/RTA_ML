@@ -21,7 +21,7 @@ for message in consumer:
     msg_count += 1
     
     if msg_count % 10 == 0:
-        print(f" RAPORT SKLEPÓW (Wiadomość {msg_count}) ")
+        print(f" Raport sklepów (Wiadomość {msg_count}) ")
         for s in sorted(store_counts.keys()):
             avg = total_amount[s] / store_counts[s]
             print(f"{s}: {store_counts[s]} szt. | Suma: {total_amount[s]:.2f} | Śr: {avg:.2f}")

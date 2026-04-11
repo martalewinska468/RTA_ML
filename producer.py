@@ -23,7 +23,7 @@ def generate_transaction():
 for i in range(1000):
     tx = generate_transaction()
     producer.send('transactions', value=tx)
-    print(f"[{i+1}] {tx['tx_id']} | {tx['amount']:.2f} PLN | {tx['store']}")
+    print(f"[{i+1}] {tx['tx_id']} | {tx['amount']:.2f} pln| {tx['store']}")
     time.sleep(0.5)
 
 producer.flush()

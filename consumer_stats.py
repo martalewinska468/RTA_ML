@@ -25,5 +25,5 @@ for message in consumer:
     
     msg_count += 1
     if msg_count % 10 == 0:
-        print(f"STATYSTYKI KATEGORII ({msg_count})")
+        print(f"Statystyki kategorii ({msg_count})")
         print(stats)
