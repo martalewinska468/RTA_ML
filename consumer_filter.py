@@ -7,7 +7,7 @@ consumer = KafkaConsumer(
     value_deserializer=lambda x: json.loads(x.decode('utf-8'))
 )
 
-print("Nasłuchuję na duże transakcje (amount > 3000)...")
+print("Nasłuchuję duże transakcje (amount > 3000)...")
 
 for message in consumer:
     if message.value["amount"] > 3000:
